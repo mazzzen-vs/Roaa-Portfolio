@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roaa Aldeeb</title>
+    <meta name="description" content="Portfolio of Roaa, a creative UI/UX Designer specializing in beautiful and intuitive digital experiences.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Roaa Aldeeb<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="badge">UI/UX Designer</span>
+                    <h1>Designing Digital <br> <span class="gradient-text">Masterpieces</span></h1>
+                    <p>Hi, I'm Roaa. I craft intuitive user interfaces and meaningful experiences that connect people with technology.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="public/Cv.Roaa%20Aldeeb.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="image-wrapper">
+                        <img src="public/Poaa's profile.jpeg" alt="Roaa - UI/UX Designer" class="profile-img">
+                        <div class="floating-badge badge-1">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i class="fas fa-pen-nib"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <h2>Featured <span class="gradient-text">Projects</span></h2>
+                <p>A selection of my recent design work.</p>
+            </div>
+            
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be dynamically injected here by JS -->
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About <span class="gradient-text">Me</span></h2>
+                    <p>I am a passionate UI/UX Designer dedicated to creating user-centric designs that not only look visually stunning but also solve real problems. With a keen eye for detail and a love for aesthetics, I transform complex requirements into elegant and simple interfaces.</p>
+                    <div style="margin: 2rem 0;">
+                        <a href="public/Cv.Roaa%20Aldeeb.pdf" target="_blank" class="btn btn-primary"><i class="fas fa-download" style="margin-right: 8px;"></i> Download CV</a>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>8+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Dedication</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>24/7</h3>
+                            <p>Creativity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-card">
+                <h2>Ready to start your next project?</h2>
+                <p>Let's create something amazing together.</p>
+                <a href="https://wa.me/201221436762" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp" style="margin-right: 8px;"></i> Message on WhatsApp</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Contact with Roaa<span>.</span></div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/roaa-aldeeb-517128330/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/201221436762" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2024 Roaa Aldeeb. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title" class="modal-title">Project Title</h2>
+            <p id="modal-desc" class="modal-desc"></p>
+            <div id="modal-gallery" class="modal-gallery">
+                <!-- Images will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
